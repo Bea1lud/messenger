@@ -395,5 +395,5 @@ app.router.add_get("/ws", websocket_handler)
 
 if __name__ == "__main__":
     ensure_history_file()
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 10000))
     web.run_app(app, host="0.0.0.0", port=port, access_log=None)
